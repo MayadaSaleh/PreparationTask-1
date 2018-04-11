@@ -129,6 +129,7 @@ public class MainActivity extends Activity implements Contract.MyView {
 
     @Override
     public String getPassword() {
+        Log.i("pass",password.getText().toString().trim()+"x");
         return password.getText().toString().trim();
     }
 
@@ -167,6 +168,11 @@ public class MainActivity extends Activity implements Contract.MyView {
 
             case "4":
                 Toast.makeText(getApplicationContext(), "You have to enter the mail", Toast.LENGTH_LONG).show();
+                //textView.setText("invalid email");
+                break;
+
+            case "5":
+                Toast.makeText(getApplicationContext(), "You have to enter the mail and the password", Toast.LENGTH_LONG).show();
                 //textView.setText("invalid email");
                 break;
         }
