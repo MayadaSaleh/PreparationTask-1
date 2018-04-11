@@ -31,12 +31,6 @@ public class ModelClass implements Contract.MyModel {
         return "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     }
 
-
-    @Override
-    public String getValidPasswordPattern() {
-        return null;
-    }
-
     @Override
     public String getloginDatafromJson(final String mail, final String password) {
         if (users == "loading") {
