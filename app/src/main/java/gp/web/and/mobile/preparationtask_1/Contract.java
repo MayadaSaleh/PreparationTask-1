@@ -24,7 +24,6 @@ public interface Contract {
 
     interface MyModel {
         String getValidEmailPattern();
-        String getValidPasswordPattern();
         String getloginDatafromJson(String mail, String password);
     }
 
